@@ -6,7 +6,7 @@ import Boton_recarga from './componente/boton_Recarga';
 import '../node_modules/bootstrap/css/bootstrap.min.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import '../node_modules/bootstrap/css/bootstrap.min.css';
-import background_Image from '../src/imagenes/01.jpg'
+
 import './App.css'; 
 function App() {  
 
