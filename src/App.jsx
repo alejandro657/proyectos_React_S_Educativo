@@ -67,8 +67,8 @@ const manejarClic_Roja=()=>{
     
 <div className="col master ">
 
-<div className="padre d-flex justify-content-center justify-content-between flex-row" >
- 
+<div className="padre container d-flex  flex-wrap justify-content-center justify-content-between flex-row" >
+ {/*cajas */}
  <Caja_Azul   
    manejarClic = {manejarClic} 
   />
@@ -87,8 +87,7 @@ const manejarClic_Roja=()=>{
 </div>
 </div>
 
-<div className='contenedor_resultado'>
-
+<div className=' container contenedor_resultado'>
 <div className='resultado' >{azul} {verde} {roja} </div>
 </div>
 < Boton_recarga/>

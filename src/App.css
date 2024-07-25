@@ -16,18 +16,23 @@ h1{
   font-style: normal;
 }
 
+
+/* donde sale el resultado*/
+.contenedor_resultado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 .resultado {
+
   color:black;
   font-size: 25px;
   height: 250px;
   width: 250px;
 }
 
-.contenedor_resultado{
-  display: flex;
-  justify-content: center;
 
-}
 
 
 
