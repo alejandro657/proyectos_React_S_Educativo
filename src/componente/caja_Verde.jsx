@@ -5,7 +5,7 @@ function CajaVerde_Componente( {manejarClic_Verde } ){
  
     return  (
       <div className= { 'verde' } onClick={manejarClic_Verde}>
-        { manejarClic_Verde }
+    
       </div>
     )  
   }

@@ -14,49 +14,46 @@ function App() {
 
 
 {/*Cuadro Azul */}
-  const [azul, setAzul]= useState('') 
-
- const  manejarClic =()=>{
-  setAzul('Respuesta correcta')  
-
+const [azul, setAzul]= useState('')
+const manejarClic = () => {  
+  setAzul('Respuesta Correcta'); 
   if (verde === 'Respuesta incorrecta' ) {  
     setVerde(''); // No hay necesidad de los espacios, solo usa ''   
     setAzul('Respuesta Correcta');   
   }   if (roja === 'Respuesta incorrecta' ){
-    setRoja('')
+    setRojo('')
     setAzul('Respuesta Correcta');  
   }
-}; 
+};  
 
 
-   const [verde, setVerde]= useState('')
-   const  manejarClic_Verde  =()=>{
-    setVerde('Respuesta incorrecta')
-
-    if (azul === 'Respuesta correcta' ) { 
-      setAzul('') 
-      setVerde('Respuesta incorrecta') // No hay necesidad de los espacios, solo usa ''   
-    
+  {/*Cuadro Verde*/}
+  const [verde, setVerde]= useState('')
+  const manejarClic_Verde=()=>{
+    setVerde('Respuesta incorrecta');  
+    if (azul === 'Respuesta Correcta' ) {  
+      setAzul(''); 
+      setVerde('Respuesta incorrecta');   
     }   if (roja === 'Respuesta incorrecta' ){
-      setRoja('')
-      setVerde('Respuesta incorrecta')
+      setRojo('')
+      setVerde('Respuesta incorrecta');  
     }
+  };  
+
+
+
+  {/*cuadro rojo */}
+const [roja, setRojo]= useState('')
+const manejarClic_Roja=()=>{
+  setRojo('Respuesta incorrecta'); 
+  if (azul === 'Respuesta Correcta' ) {  
+    setAzul(''); 
+    setRojo('Respuesta incorrecta');   
+  }   if (verde === 'Respuesta incorrecta' ){
+    setVerde('' )
+    setRojo('Respuesta incorrecta');  
   }
-
-     const [roja, setRoja]= useState('')
-
-     const  manejarClic_Roja  =()=>{
-      setRoja('Respuesta incorrecta')
-
-    if (setAzul === 'Respuesta correcta'){
-      setAzul('')
-      setRoja('Respuesta incorrecta')
-    } if (setVerde === 'Respuesta incorrecta'){
-      setRoja( 'Respuesta incorrecta')
-
-    }
-    
-    }
+}
 
 
 
